@@ -48,3 +48,27 @@ Failed expectedly. https://github.com/szksh-lab-2/test-action-lockfile/actions/r
 Invalid lockfile: .github/workflows/actions.lock#L1
 The lockfile could not be validated. Regenerate it by running `gh actions-lock`.
 ```
+
+`gh actions-lock` unpins.
+
+Before:
+
+```yaml
+uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
+```
+
+After:
+
+```yaml
+uses: actions/checkout@v7.0.0
+```
+
+## Renovate
+
+https://docs.renovatebot.com/modules/manager/github-actions/#github-actions-lockfile-actionslock
+
+https://github.com/szksh-lab-2/test-action-lockfile/pull/2#issuecomment-6190359827
+
+```
+opening lockfile: reading .github/workflows/actions.lock: line 4, column 10: lockfile version v0.0.3 is newer than this binary supports (v0.0.2); upgrade the tool that reads this lockfile to a build that supports v0.0.3; run `gh extension upgrade gh-actions-lock` to update
+```
