@@ -41,3 +41,10 @@ dependencies:
 ```
 
 Succeeded. https://github.com/szksh-lab-2/test-action-lockfile/actions/runs/38720718412/job/116374301698?pr=1
+
+Failed expectedly. https://github.com/szksh-lab-2/test-action-lockfile/actions/runs/38720849962
+
+```
+Invalid lockfile: .github/workflows/actions.lock#L1
+The lockfile could not be validated. Regenerate it by running `gh actions-lock`.
+```
