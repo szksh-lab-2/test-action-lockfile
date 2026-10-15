@@ -39,3 +39,5 @@ dependencies:
         owner_id: 44036562
         repo_id: 197814629
 ```
+
+Succeeded. https://github.com/szksh-lab-2/test-action-lockfile/actions/runs/38720718412/job/116374301698?pr=1
