@@ -1,0 +1,13 @@
+on: pull_request
+jobs:
+  test-2:
+    runs-on: ubuntu-26.04
+    timeout-minutes: 10
+    permissions: {}
+    steps:
+      - uses: actions/checkout@v7.0.0
+        with:
+          persist-credentials: false
+      - uses: aquaproj/aqua-installer@v4.1.1
+        with:
+          aqua_version: v2.65.2
